@@ -28,15 +28,18 @@ var _hola$num = {
 console.log(hola + ' -> n\xFAmero ' + num);
 
 // Component react
+
+var _ref2 = React.createElement(
+  'h4',
+  null,
+  'Hello world! :)'
+);
+
 var HelloWorld = function HelloWorld(props) {
   return React.createElement(
     'div',
     null,
-    React.createElement(
-      'h4',
-      null,
-      'Hello world! :)'
-    ),
+    _ref2,
     React.createElement(
       'p',
       null,
@@ -66,7 +69,7 @@ var resolveAfter2Seconds = function resolveAfter2Seconds() {
 // }
 
 var asyncCall = function () {
-  var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+  var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
     var result;
     return regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
@@ -90,7 +93,7 @@ var asyncCall = function () {
   }));
 
   return function asyncCall() {
-    return _ref2.apply(this, arguments);
+    return _ref3.apply(this, arguments);
   };
 }();
 
